@@ -144,10 +144,11 @@ const Form: React.FC<FormProps> = ({ resumeData }) => {
     The questions should cover a range of areas, including complex technical topics, problems, scenarios, and general questions, similar to those used in Google interviews. 
     The difficulty level of the questions should be ${difficulty}, 
     and the total number of questions to be generated is ${numberOfQuestions}.
-    Please include problem-solving approaches similar to those found on platforms like LeetCode, and provide follow-along solutions for each problem.`
+    Please include problem-solving approaches similar to those found on platforms like LeetCode, and questions available on other platforms.`
       );
-    const parsedData = JSON.parse(result.response.text());
-    await saveQuestions(parsedData, resumeId, sessionId,difficulty,userId || "");
+    const parsedData = result.response.text();
+    console.log(parsedData);
+    await saveQuestions(JSON.parse(parsedData), resumeId, sessionId,difficulty,userId || "");
    //console.log('Questions:',ResponseForSavedQuestion);
    // console.log('Questions:', parsedData);
    setIsLoading(false);
