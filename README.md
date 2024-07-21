@@ -72,5 +72,5 @@ To set up the InterviewMentorAI application locally for development purposes, fo
    npm run dev
 
 6. **Open your browser and navigate to:**
-  ```bash
-   http://localhost:3000
+     ```bash
+     http://localhost:3000
