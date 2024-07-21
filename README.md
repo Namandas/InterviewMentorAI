@@ -56,16 +56,16 @@ To set up the InterviewMentorAI application locally for development purposes, fo
    npm i
    
 4. **Set up environment variables:**
-   ```bash
-  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-  CLERK_SECRET_KEY=
-  
-  NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-  NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-  WEBHOOK_SECRET=
-  
-  NEXT_PUBLIC_GEMINI_API_KEY=
-  NEXT_PUBLIC_DRIZZLE_DATABASE_URL=
+    ```bash
+     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+     CLERK_SECRET_KEY=
+     
+     NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+     NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+     WEBHOOK_SECRET=
+     
+     NEXT_PUBLIC_GEMINI_API_KEY=
+     NEXT_PUBLIC_DRIZZLE_DATABASE_URL=
 
 5. **Run the application:**
    ```bash
