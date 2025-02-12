@@ -147,10 +147,10 @@ const Form: React.FC<FormProps> = ({ resumeData }) => {
     Please include problem-solving approaches similar to those found on platforms like LeetCode, and questions available on other platforms.`
       );
     const parsedData = result.response.text();
-    console.log(parsedData);
+    console.log("Question : ",parsedData);
     await saveQuestions(JSON.parse(parsedData), resumeId, sessionId,difficulty,userId || "");
    //console.log('Questions:',ResponseForSavedQuestion);
-   // console.log('Questions:', parsedData);
+   console.log('Questions:', parsedData);
    setIsLoading(false);
    route.push(`/interview/${sessionId}`);
   };
